@@ -5,7 +5,7 @@
 - Name
 - Floor_number
 - Room_number
-- Profesor_Id
+- Professor_Id
 - Course_Id
 
 ## Courses
@@ -15,10 +15,10 @@
 - Semestre
 - Credit_number
 - Description
-- Profesor_Id
+- Professor_Id
 - Student_Id
 - Exam_Id
-## Profesors
+## Professors
 - Id
 - Name
 - Lastname
