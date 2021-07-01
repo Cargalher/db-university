@@ -5,7 +5,7 @@
 - Name
 - Floor_number
 - Room_number
-- Profesors_Id
+- Profesor_Id
 - Course_Id
 
 ## Courses
@@ -22,7 +22,7 @@
 - Id
 - Name
 - Lastname
-- Departments
+- Department_Id
 - Course_Id
 ## Exams
 - Id
@@ -41,7 +41,7 @@
 - Email
 - Telephone
 - Course_Id
-- Exams_Id
+- Exam_Id
 - Grade_Id
 
 ## Grades
