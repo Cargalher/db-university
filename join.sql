@@ -1,13 +1,19 @@
 GROUP BY
 
-1- Contare quanti iscritti ci sono stati ogni anno
+1- Contare quanti iscritti ci sono stati ogni anno (year:2018-912 students; 2019-1709; 2020-1645; 2021-734)
 
-    SELECT COUNT(*) AS registered_students, enrolment_date
-    FROM `students`
-    GROUP BY enrolment_date
+    SELECT COUNT(*)
+    AS registered_students, YEAR(enrolment_date) AS enrollment_year
+    FROM `students` GROUP BY enrollment_year
     
 2- Contare gli insegnanti che hanno l ufficio nello stesso edificio
+
+    SELECT COUNT(id) AS floor, office_address
+    FROM `teachers`
+    GROUP by office_address
+
 3- Calcolare la media dei voti di ogni appello d esame
+
 4- Contare quanti corsi di laurea ci sono per ogni dipartimento
 
 JOINS:
