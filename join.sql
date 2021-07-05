@@ -22,6 +22,12 @@ GROUP BY
 
 4- Contare quanti corsi di laurea ci sono per ogni dipartimento
 
+    SELECT COUNT(id)
+    AS Ttotal_number_degrees, department_id
+    FROM degrees GROUP BY department_id
+
+
+
 JOINS:
 1- Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 2- Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze
