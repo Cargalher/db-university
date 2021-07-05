@@ -8,11 +8,17 @@ GROUP BY
     
 2- Contare gli insegnanti che hanno l ufficio nello stesso edificio
 
-    SELECT COUNT(id) AS floor, office_address
-    FROM `teachers`
-    GROUP by office_address
+   SELECT COUNT(*)
+    AS current_teachers, office_address AS same_floor_numbers
+    FROM `teachers` 
+    GROUP BY same_floor_numbers
 
 3- Calcolare la media dei voti di ogni appello d esame
+
+    SELECT AVG (vote)
+    AS average_exam, exam_id
+    FROM exam_student
+    GROUP BY exam_id
 
 4- Contare quanti corsi di laurea ci sono per ogni dipartimento
 
