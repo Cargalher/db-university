@@ -18,8 +18,9 @@
 3.Selezionare tutti gli studenti che hanno più di 30anni
 
     SELECT *
-    FROM students
-    WHERE date_of_birth > DATE_SUB(CURDATE(),INTERVAL 30 YEAR)
+    FROM `students`
+    WHERE YEAR(date_of_birth) < YEAR(CURDATE()) - 30;
+
 
 4.Selezionare tutti i corsi del primo semestre del primoanno di un qualsiasi corso dilaurea(286)
 
