@@ -27,7 +27,7 @@ echo 'Connection Successful, Go!';
 
 $sql = "SELECT * FROM students";
 $results = $connection->query($sql);
-var_dump($results);
+// var_dump($results);
 
 #5. check if there are results and we do a loop inside of the table we want to see
 
@@ -45,5 +45,9 @@ while ($student = $results->fetch_array()){  //saving the single result from a s
 } else if($results){
   echo 'There is no result';
 }else{
-  echo 'There is a query Error'
+  echo 'There is a query Error';
 }
+
+#6. Close the conection
+
+$connection->close();
