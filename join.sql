@@ -34,7 +34,7 @@ JOINS:
     SELECT students.id, students.name, students.surname, students.date_of_birth, students.fiscal_code, students.enrolment_date, students.registration_number, students.email 
     FROM students 
     JOIN degrees
-    ON students.degree_id = degree.id
+    ON students.degree_id = degrees.id
     WHERE degrees.name = 'Corso di Laurea in Economia'
 
 2- Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze (14 CORSI)
