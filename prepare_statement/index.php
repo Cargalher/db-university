@@ -35,7 +35,10 @@ if($results && $results->num_rows > 0){
 // loop the result and print it
 // var_dump($results->fetch_assoc());
 while ($student = $results->fetch_array()){  //saving the single result from a single row in a variable called 'student' (i called the variable student because i am doing the loop inside of the tabella students)
-
+  ?>
+  <h1><?= $student['name'];?></h1>
+  <p><?= $student['surname'];?></p>
+  <?php
 }
 
 
