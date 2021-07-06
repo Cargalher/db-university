@@ -29,10 +29,16 @@ $sql = "SELECT * FROM students";
 $results = $connection->query($sql);
 var_dump($results);
 
+#5. check if there are results and we do a loop
+
 if($results && $results->num_rows > 0){
 // loop the result and print it
-var_dump($results->fetch_assoc());
-die();
+// var_dump($results->fetch_assoc());
+while ($students = $results->fetch_array(){  //saving the single result from a single row in a variable called 'students' (i called the variable student because i am doing the loop inside of the tabella students)
+
+})
+
+
 } /*else if(){
 
 }else{
