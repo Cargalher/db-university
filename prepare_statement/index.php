@@ -29,7 +29,7 @@ $sql = "SELECT * FROM students";
 $results = $connection->query($sql);
 var_dump($results);
 
-#5. check if there are results and we do a loop
+#5. check if there are results and we do a loop inside of the table we want to see
 
 if($results && $results->num_rows > 0){
 // loop the result and print it
@@ -42,8 +42,8 @@ while ($student = $results->fetch_array()){  //saving the single result from a s
 }
 
 
-} /*else if(){
-
+} else if($results){
+  echo 'There is no result';
 }else{
-
-}*/
+  echo 'There is a query Error'
+}
