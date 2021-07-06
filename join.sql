@@ -9,9 +9,9 @@ GROUP BY
 2- Contare gli insegnanti che hanno l ufficio nello stesso edificio
 
    SELECT COUNT(*)
-    AS current_teachers, office_address AS same_floor_numbers
+    AS current_teachers, office_address
     FROM `teachers` 
-    GROUP BY same_floor_numbers
+    GROUP BY office_address
 
 3- Calcolare la media dei voti di ogni appello d esame
 
