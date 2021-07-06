@@ -39,11 +39,11 @@ JOINS:
 
 2- Selezionare tutti i Corsi di Laurea del Dipartimento di Neuroscienze (14 CORSI)
 
-    SELECT courses.id, courses.name, courses.period, courses.year, courses.cfu, courses.website
-    FROM courses
-    JOIN departments
-    ON courses.degree_id = departments.id
-    WHERE departments.name = 'Dipartimento di Neuroscienze'
+    SELECT `degrees`.* 
+    FROM `degrees` 
+    JOIN `departments` 
+    ON `departments`.`id`= `degrees`.`department_id` 
+    WHERE `departments`.`name = 'Dipartimento di Neuroscienze'
 
 3- Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44) (18 CORSI)
 
