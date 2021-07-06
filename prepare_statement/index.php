@@ -12,15 +12,20 @@ define('DB_PORT', '3306');
 // var_dump(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME);
 
 
-# 2. connect to the database with mysqli
+# 2. Connect to the database with mysqli
 $connection = new mysqli(DB_SERVERNAME, DB_USERNAME, DB_PASSWORD, DB_NAME, DB_PORT);
 // var_dump($connection);
 
 
-# 3. check for connection errors
+# 3. check for our connections
 if ($connection && $connection->connect_error) {
   echo "Connection failed: " . $connection->connect_error;
-  die();
+ 
 }
-# 4. Query the database
+# 4. Query the database if the conection is stablished
 echo 'Connection Successful, Go!';
+
+$sql = "SELECT * FROM students";
+$results = $connection->query($sql);
+var_dump($results);
+die();
