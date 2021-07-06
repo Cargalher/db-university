@@ -34,9 +34,9 @@ var_dump($results);
 if($results && $results->num_rows > 0){
 // loop the result and print it
 // var_dump($results->fetch_assoc());
-while ($students = $results->fetch_array(){  //saving the single result from a single row in a variable called 'students' (i called the variable student because i am doing the loop inside of the tabella students)
+while ($student = $results->fetch_array()){  //saving the single result from a single row in a variable called 'student' (i called the variable student because i am doing the loop inside of the tabella students)
 
-})
+}
 
 
 } /*else if(){
