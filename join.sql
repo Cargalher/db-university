@@ -95,7 +95,7 @@ JOINS:
     JOIN courses ON exams.course_id = courses.id
     GROUP BY students.id, courses.name
 
-    1st way(Emmanuele)
+   2nd way(Emmanuele)
 
     SELECT students.name AS nome_studente, students.surname AS cognome_studente, courses.name AS nome_corso,
     COUNT(exams.id) AS tentativi
