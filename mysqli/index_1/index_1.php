@@ -36,8 +36,10 @@ if($results && $results->num_rows > 0){
 // var_dump($results->fetch_assoc());
 while ($student = $results->fetch_array()){  //saving the single result from a single row in a variable called 'student' (i called the variable student because i am doing the loop inside of the tabella students)
   ?>
-  <h1><?= $student['name'];?></h1>
-  <p><?= $student['surname'];?></p>
+  <h1><?= $student['name'] . " " . $student['surname'];?></h1>
+  <p><?= "Registration Number: " . " " . $student['registration_number'];?></p>
+  <p><?= "Enrrolment Date: " . " " . $student['enrollment_date'];?></p>
+  <p><?= "Email: " . " " . $student['email'];?></p>
   <?php
 }
 
